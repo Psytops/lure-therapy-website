@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Host your next fishing tournament with Lure Therapy Tournaments. Event listings, catch submissions, review tools and live leaderboards for clubs, groups and organisers.">
+  <title>Host Your Fishing Event | Lure Therapy Tournaments</title>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .host-hero { position: relative; isolation: isolate; overflow: hidden; border: 1px solid #203b50; border-radius: 24px; padding: clamp(30px, 6vw, 60px); background: radial-gradient(circle at 90% 0%, rgba(0,175,255,.16), transparent 42%), radial-gradient(circle at 0% 100%, rgba(245,185,55,.08), transparent 50%), #0d121a; }
+    .eyebrow { color: #f1c461; font-size: .82rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; margin: 0 0 16px; }
+    .host-hero h1 { max-width: 760px; }
+    .host-hero .lead { color: #d2d9e4; max-width: 710px; font-size: clamp(1.05rem, 2.3vw, 1.24rem); }
+    .host-hero .button { box-shadow: 0 8px 28px rgba(0,175,255,.13); }
+    .host-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+    .host-tags span { display: inline-block; border: 1px solid #34404e; border-radius: 999px; padding: 7px 12px; color: #c9d4df; font-size: .85rem; }
+    .host-section { margin-top: 56px; }
+    .host-section > h2 { margin: 0 0 10px; font-size: clamp(1.6rem, 3vw, 2.1rem); }
+    .host-section > .muted { margin-top: 0; }
+    .feature-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
+    .feature-grid .card { margin: 0; }
+    .feature-grid h3 { margin: 0 0 8px; color: #f5f5f5; }
+    .feature-grid p { margin: 0; color: #c1cad6; }
+    .feature-number { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 10px; background: #073248; color: #36c3ff; font-weight: 800; margin-bottom: 14px; }
+    .steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
+    .steps .card { margin: 0; }
+    .steps h3 { margin: 0 0 10px; }
+    .steps p { color: #c1cad6; margin: 0; }
+    .event-types { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0; padding: 0; list-style: none; }
+    .event-types li { border: 1px solid #303a47; background: #10151e; border-radius: 12px; padding: 10px 15px; }
+    .host-cta { margin-top: 56px; border: 1px solid #3d5e73; border-radius: 20px; padding: clamp(26px, 5vw, 44px); background: linear-gradient(140deg, #0c2433, #11141a); }
+    .host-cta h2 { margin: 0 0 12px; font-size: clamp(1.6rem, 3vw, 2rem); }
+    .host-cta p { color: #d0d9e5; }
+    .small-note { font-size: .92rem; color: #aeb6c2; }
+    @media (max-width: 680px) {
+      .feature-grid, .steps { grid-template-columns: 1fr; }
+      .host-hero { padding: 26px 22px; }
+      .host-hero .actions .button, .host-cta .actions .button { width: 100%; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand">Lure Therapy Tournaments</div>
+    <nav aria-label="Main navigation">
+      <a href="/">Home</a>
+      <a href="/host-an-event/" aria-current="page">Host an Event</a>
+      <a href="/support/">Support</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/delete-account/">Delete Account</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="host-hero">
+    <p class="eyebrow">For fishing clubs, groups &amp; event organisers</p>
+    <h1>Want us to host your next fishing tournament?</h1>
+    <p class="lead">From a friendly social comp to a club tournament, Lure Therapy Tournaments gives anglers a place to join events, submit their catches and follow the live leaderboard. Tell us what you're planning and let's discuss hosting your event on our platform.</p>
+    <div class="actions">
+      <a class="button" href="mailto:mat_p86@hotmail.com?subject=Lure%20Therapy%20Tournaments%20-%20Host%20My%20Event&body=Hi%20Lure%20Therapy%2C%0A%0AI%27d%20like%20to%20enquire%20about%20hosting%20a%20fishing%20event%20on%20your%20platform.%0A%0AOrganiser%20or%20club%3A%20%0AEvent%20name%3A%20%0AProposed%20dates%3A%20%0ALocation%20or%20region%3A%20%0AEvent%20type%3A%20%0AEstimated%20anglers%3A%20%0ASpecies%20and%20format%3A%20%0AOther%20details%3A%20%0A%0AThanks%2C%0A">Enquire About Hosting</a>
+      <a class="button secondary" href="#how-it-works">How It Works</a>
+    </div>
+    <div class="host-tags" aria-label="Platform features">
+      <span>Fishing tournaments</span>
+      <span>Catch photo submissions</span>
+      <span>Live leaderboards</span>
+      <span>Event management</span>
+    </div>
+  </section>
+
+  <section class="host-section" aria-labelledby="why-heading">
+    <h2 id="why-heading">Make your competition easier to follow</h2>
+    <p class="muted">Bring key parts of your fishing event together in one app for anglers and organisers.</p>
+    <div class="feature-grid">
+      <article class="card">
+        <div class="feature-number" aria-hidden="true">01</div>
+        <h3>Event information &amp; entry</h3>
+        <p>Give anglers a place to find your tournament, review event details and join where eligible.</p>
+      </article>
+      <article class="card">
+        <div class="feature-number" aria-hidden="true">02</div>
+        <h3>Catch submissions</h3>
+        <p>Anglers can submit catch photos, species and measurements through the app instead of chasing paper records.</p>
+      </article>
+      <article class="card">
+        <div class="feature-number" aria-hidden="true">03</div>
+        <h3>Catch review &amp; scoring</h3>
+        <p>Event administrators can review submitted catches and manage results against the event's rules.</p>
+      </article>
+      <article class="card">
+        <div class="feature-number" aria-hidden="true">04</div>
+        <h3>Live leaderboards</h3>
+        <p>Keep competitors and followers engaged with a live view of tournament standings and results.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="host-section" aria-labelledby="events-heading">
+    <h2 id="events-heading">What kind of event are you planning?</h2>
+    <p class="muted">Whether it's a one-day competition or a longer fishing challenge, we'd love to hear about it.</p>
+    <ul class="event-types">
+      <li>Fishing club competitions</li>
+      <li>Social fishing events</li>
+      <li>Kayak and boat tournaments</li>
+      <li>Species-specific challenges</li>
+      <li>Charity and fundraising events</li>
+      <li>Monthly fishing competitions</li>
+    </ul>
+    <p class="small-note">Event formats and features are discussed with organisers before hosting is confirmed.</p>
+  </section>
+
+  <section id="how-it-works" class="host-section" aria-labelledby="steps-heading">
+    <h2 id="steps-heading">How hosting works</h2>
+    <p class="muted">Start with a conversation. We'll help you work out whether the platform suits your event.</p>
+    <div class="steps">
+      <article class="card">
+        <div class="feature-number" aria-hidden="true">1</div>
+        <h3>Tell us your idea</h3>
+        <p>Send us your event name, dates, location, target species, format and expected number of anglers.</p>
+      </article>
+      <article class="card">
+        <div class="feature-number" aria-hidden="true">2</div>
+        <h3>Discuss the details</h3>
+        <p>We'll talk through your event requirements, hosting options, any fees and how entries and scoring could work.</p>
+      </article>
+      <article class="card">
+        <div class="feature-number" aria-hidden="true">3</div>
+        <h3>Get ready to launch</h3>
+        <p>Once the arrangements are agreed and your event is set up, participants can use the app to take part.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="host-cta" aria-labelledby="enquire-heading">
+    <p class="eyebrow">Let's talk fishing</p>
+    <h2 id="enquire-heading">Have an event in mind?</h2>
+    <p>We'd love to hear from clubs, community groups and organisers interested in using Lure Therapy Tournaments. Send us a few details and we'll discuss the next steps.</p>
+    <div class="actions">
+      <a class="button" href="mailto:mat_p86@hotmail.com?subject=Lure%20Therapy%20Tournaments%20-%20Host%20My%20Event&body=Hi%20Lure%20Therapy%2C%0A%0AI%27d%20like%20to%20enquire%20about%20hosting%20a%20fishing%20event%20on%20your%20platform.%0A%0AOrganiser%20or%20club%3A%20%0AEvent%20name%3A%20%0AProposed%20dates%3A%20%0ALocation%20or%20region%3A%20%0AEvent%20type%3A%20%0AEstimated%20anglers%3A%20%0ASpecies%20and%20format%3A%20%0AOther%20details%3A%20%0A%0AThanks%2C%0A">Ask Us to Host Your Event</a>
+      <a class="button secondary" href="mailto:mat_p86@hotmail.com">mat_p86@hotmail.com</a>
+    </div>
+    <p class="small-note">Event organisers remain responsible for their competition's rules, permissions, insurance, prizes and on-water safety unless otherwise agreed. Hosting is subject to suitability and confirmation.</p>
+  </section>
+</main>
+<footer><div class="footer-inner">© 2026 Lure Therapy Tournaments · <a href="/support/">Support</a> · <a href="/privacy/">Privacy</a> · <a href="/delete-account/">Account Deletion</a></div></footer>
+</body>
+</html>
