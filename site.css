@@ -1,0 +1,51 @@
+/* Shared public-site design; /admin/ deliberately untouched. */
+.site-page{--max:1160px;background:#070b12;color:#f0f6fc}
+.site-page header{position:sticky;top:0;z-index:10;background:rgba(7,11,18,.95);border-bottom:1px solid #273444;backdrop-filter:blur(15px)}
+.site-page .nav{max-width:1160px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;padding:17px 24px}
+.site-page .brand-link{font-size:.94rem;letter-spacing:-.025em;text-decoration:none;color:#fff}
+.site-page .brand-link span{color:#f9d58c}
+.site-page .site-nav{display:flex;align-items:center;flex-wrap:wrap;gap:9px 22px}
+.site-page .site-nav a{font-size:.84rem;font-weight:650;margin:0;color:#b5c6d7;text-decoration:none}
+.site-page .site-nav a:hover,.site-page .site-nav a[aria-current="page"]{color:#fff}
+.site-page .site-nav .nav-feature{color:#f9d58c}
+.site-page .skip-link{position:absolute;left:-9999px;top:10px;padding:10px 16px;background:#f7d183;color:#111;z-index:99}
+.site-page .skip-link:focus{left:10px}
+.site-page main{max-width:1160px;padding:55px 24px 95px}
+.site-page h1,.site-page h2,.site-page h3{letter-spacing:-.035em}
+.site-page h1{font-size:clamp(2.5rem,5vw,4.3rem);line-height:1.12}
+.site-page h2{font-size:clamp(1.7rem,2.9vw,2.2rem);color:#f4f8ff}
+.site-page h3{color:#f4f8ff}
+.site-page p,.site-page li{color:#c3cfdc}
+.site-page .muted{color:#a9bacb}
+.site-page a{color:#79d1ff}
+.site-page a:focus-visible{outline:2px solid #f4c46a;outline-offset:4px}
+.site-page .button{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;min-height:48px;text-align:center;background:linear-gradient(115deg,#ffd782,#e9ae45);border:1px solid #f4cd77;border-radius:10px;color:#151007;font-weight:800;text-decoration:none}
+.site-page .button.secondary{background:#152232;border:1px solid #456078;color:#f2f6fc}
+.site-page .hero,.site-page .host-hero{background:radial-gradient(ellipse at 95% 4%,rgba(0,175,255,.2),transparent 54%),radial-gradient(ellipse at 5% 110%,rgba(230,175,66,.11),transparent 55%),linear-gradient(130deg,#122336,#0a121d);border:1px solid #34506a;border-radius:23px;padding:clamp(30px,5vw,60px);margin:0 0 45px}
+.site-page .hero h1,.site-page .host-hero h1{margin:0 0 25px}
+.site-page .hero .muted,.site-page .host-hero .lead{font-size:clamp(1.05rem,2vw,1.25rem);color:#cdd9e6}
+.site-page .eyebrow,.site-page .download-eyebrow{color:#f2c677;letter-spacing:.13em;font-size:.8rem;font-weight:800}
+.site-page .card{background:linear-gradient(145deg,#152336,#0d1520);border:1px solid #30455b;border-radius:17px;padding:clamp(22px,3vw,30px)}
+.site-page .card h2:first-child,.site-page .card h3:first-child{margin-top:0}
+.site-page .host-section{margin-top:72px}
+.site-page .host-section>h2{margin-top:0}
+.site-page .feature-number{background:rgba(241,189,86,.12);border:1px solid #76603c;color:#f4ce7e}
+.site-page .host-tags span,.site-page .event-types li{border-color:#486176;background:#112335;color:#d1dde7}
+.site-page .host-cta{background:linear-gradient(120deg,#193046,#111a25);border:1px solid #6c634f}
+.site-page .download-section{background:linear-gradient(120deg,#172b3d,#0b1523);border:1px solid #40566c}
+.site-page .store-option{background:#0d1b2b;border-color:#3e5266}
+.site-page .store-status{color:#f4cc78}
+.site-page .store-icon{background:#223648;color:#ffd17e}
+.site-page .legal-main{max-width:960px}
+.site-page .legal-main>h1{padding-bottom:26px;border-bottom:1px solid #34495e}
+.site-page .legal-main>h2{margin-top:45px;padding-top:22px;border-top:1px solid #293d50}
+.site-page .legal-main p,.site-page .legal-main li{line-height:1.85}
+.site-page footer{background:#090e16;border-top:1px solid #2d4054}
+.site-page .home-footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:25px}
+.site-page .home-footer>div{display:flex;flex-direction:column;gap:6px}
+.site-page .home-footer strong{color:#fff}
+.site-page .home-footer span,.site-page .home-footer small{color:#a4b4c4;font-size:.84rem}
+.site-page .home-footer nav{display:flex;flex-wrap:wrap;gap:10px 20px;max-width:560px}
+.site-page .home-footer nav a{margin:0;color:#cbd7e3;font-size:.84rem}
+@media(max-width:910px){.site-page .nav,.site-page .site-nav{justify-content:center}}
+@media(max-width:650px){.site-page header{position:static}.site-page .nav{padding:13px 16px}.site-page .site-nav{gap:8px 14px}.site-page .site-nav a{font-size:.78rem}.site-page .brand-link{font-size:.85rem}.site-page main{padding:32px 18px 65px}.site-page .hero,.site-page .host-hero{padding:26px 20px}.site-page .feature-grid,.site-page .steps,.site-page .store-grid{grid-template-columns:1fr}.site-page .actions .button{width:100%}.site-page .home-footer{flex-direction:column}}

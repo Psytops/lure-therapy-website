@@ -132,3 +132,7 @@
  .home-page .store-availability > div { flex-wrap:wrap; }
 }
 @media (prefers-reduced-motion: reduce) { .home-page .button { transition:none; } }
+.home-page .club-process-note{margin:27px 0 0;padding:18px 22px;background:linear-gradient(120deg,#132338,#0d1a29);border:1px solid #75603a;border-radius:14px;color:#d7e2ef;line-height:1.65}
+.home-page .club-process-note strong{color:#f4ce7f}
+.home-page .site-nav a[aria-current="page"]{color:#fff}
+@media(max-width:650px){.home-page header{position:static}.home-page .site-nav{gap:7px 14px}.home-page .site-nav a{font-size:.77rem}}
