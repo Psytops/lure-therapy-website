@@ -1,0 +1,38 @@
+# Lightweight read-only database activity for the Lure Therapy Supabase Free project.
+# A few database queries per day may reduce inactivity pausing, but cannot guarantee it.
+# This uses the same browser-safe *publishable* key already served in /admin/assets.
+# NEVER put a Supabase secret key, service_role key, or user token in this file.
+name: Supabase Free Plan Activity
+
+on:
+  schedule:
+    - cron: '23 1,9,17 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  database-activity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Make a tiny read-only PostgREST query
+        env:
+          SUPABASE_URL: https://mzmzdbfeufoguxcdfuwe.supabase.co
+          SUPABASE_PUBLISHABLE_KEY: sb_publishable_6QRKVlBOxuO6NiMWQNc-fw_BNU5lHQk
+        shell: bash
+        run: |
+          set -euo pipefail
+          http_status="$(curl --silent --show-error --max-time 30 --retry 2 \
+            --output /dev/null --write-out '%{http_code}' \
+            --get "$SUPABASE_URL/rest/v1/tournament_species" \
+            --data-urlencode 'select=id' \
+            --data-urlencode 'limit=1' \
+            --header "apikey: $SUPABASE_PUBLISHABLE_KEY")"
+          echo "Supabase database request HTTP status: $http_status"
+          if [[ "$http_status" != "200" && "$http_status" != "206" ]]; then
+            echo "::error::Supabase query failed (HTTP $http_status). If paused, restore the project from the Supabase Dashboard."
+            exit 1
+          fi
+          echo "Read-only database request succeeded."
